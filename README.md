@@ -8,8 +8,8 @@
 
 <br/>
 
->  <p style="text-align: justify">“Don't underestimate the power of your vision to change the world. Whether that world is your office, your community, an industry or a global movement, you need to have a core belief that what you contribute can fundamentally change the paradigm or way of thinking about problems.”</p>
-> <p style="text-align: right">― Leroy Hood</p>
+<p style="text-align: justify"><em>“Don't underestimate the power of your vision to change the world. Whether that world is your office, your community, an industry or a global movement, you need to have a core belief that what you contribute can fundamentally change the paradigm or way of thinking about problems.”</em></p>
+<p style="text-align: right">― Leroy Hood</p>
 
 <hr>
 
