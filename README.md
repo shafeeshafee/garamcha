@@ -11,12 +11,12 @@
 >  <p style="text-align: justify">“Don't underestimate the power of your vision to change the world. Whether that world is your office, your community, an industry or a global movement, you need to have a core belief that what you contribute can fundamentally change the paradigm or way of thinking about problems.”</p>
 > <p style="text-align: right">― Leroy Hood</p>
 
-<br/>
+<hr>
 
 ## ❤️&nbsp; Story
 
 
-[Garamcha](https://github.com/shafeeshafee/garamcha) (Pronounced: 'GAH'-ram-cha') is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Our project illustrates the powerfulness of ideas. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
+[Garamcha](https://github.com/shafeeshafee/garamcha) *(Pronounced: 'GAH'-ram-cha')* is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Our project illustrates the powerfulness of ideas. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
 
 **The idea of Garamcha:** <br/>
 The word garam in Bengali means *warm* or *hot*, and *cha* means tea. The inspiration for this word came about when we thought about how comforting it is to have a beverage fresh and ready upon coming home.
