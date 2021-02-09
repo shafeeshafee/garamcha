@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
+<p align="center">
+    <a href="https://sulu.io/" target="_blank">
+        <img width="100%" src="https://i.imgur.com/43P3NIZ.png" alt="Garamcha logo">
+    </a>
+</p>
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+>  <p style="text-align: justify">“Don't underestimate the power of your vision to change the world. Whether that world is your office, your community, an industry or a global movement, you need to have a core belief that what you contribute can fundamentally change the paradigm or way of thinking about problems.”</p>
+> <p style="text-align: right">― Leroy Hood</p>
 
-### `yarn start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ❤️&nbsp; Story
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+[Garamcha](https://github.com/shafeeshafee/garamcha) (Pronounced: 'GAH'-ram-cha') is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Our project illustrates the powerfulness of ideas. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**The idea of Garamcha:** <br/>
+The word garam in Bengali means *warm* or *hot*, and *cha* means tea. The inspiration for this word came about when we thought about how comforting it is to have a beverage fresh and ready upon coming home.
 
-### `yarn build`
+Bangladesh houses one of the three largest tea gardens in the world. Although the tea industry is booming in Bangladesh, [little of it is actually exported](https://www.tea.globaltradeconcern.com/). How can we add value to those industries? The answer to that is the idea of *Garamcha*, which is to host their business online for international trade. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Our mock app starts in Bangladesh, because an idea that is so grassroots such as tea farmers in Bangladesh handcrafting tea and setting up an online market, can be applied to any business.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
+<p align="center">
+    <img width="80%" src="https://sulu.io/uploads/media/800x@2x/07/167-ezgif.gif?v=2" alt="Sulu Slideshow">
+</p>
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🤝&nbsp; Community
 
-### `yarn eject`
+If you believe in our mission, feel free to star this project and contribute.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Meanwhile, here are some videos that highlight the beauty of this wonderful country:
+- ["Bangladesh - Land of Stories"](https://www.youtube.com/watch?v=QNUSIOMb6vI)
+- ["Bangladesh: Raw Beauty"](https://youtu.be/rDYdeq3JW_E)
+- ["Bangladesh's Gorgeous Tea Fields"](https://www.youtube.com/watch?v=OSW-5Zd48s0)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀&nbsp; Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Get a free API key from Stripe
+2. Register with Commerce.js
+3. Clone this [repository](https://github.com/shafeeshafee/garamcha)
+4. `npm i`
+5. `npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## ✅&nbsp; Built with
 
-## Learn More
+| <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://tailwindcss.com/"><img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://www.javascript.com/"><img src="https://www.svgrepo.com/show/303206/javascript-logo.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://reactjs.org/"><img src="https://www.svgrepo.com/show/303157/react-logo.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://stripe.com/docs/api"><img src="https://www.svgrepo.com/show/314726/stripe.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://commercejs.com/"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ITpGWFxn--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/2134/d92f50cd-7ad7-48ba-9970-7abecdeb2194.png" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://material-ui.com/"><img src="https://material-ui.com/static/logo.png" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://github.com/axios/axios"><img src="https://www.svgrepo.com/show/6793/server.svg" width="80" height="80" /></a></button> |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📫&nbsp; Connect with us
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Ayman Omer                                                                                                                                                                                                              | Shafee Ahmed |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| <img src="https://www.svgrepo.com/show/217760/linkedin.svg"  width="50" height="auto" style="margin: 0 1em"> <img src="https://www.svgrepo.com/show/217753/github.svg"  width="50" height="auto" style="margin: 0 1em"> |              |
