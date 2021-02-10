@@ -6,6 +6,12 @@ module.exports = {
 			backgroundImage: {
 				"hero-lg": "url('/src/images/tea-garden.jpg')",
 			},
+			colors: {
+				primary: "#FDD50F",
+			},
+			fontFamily: {
+				headings: ["Solway"],
+			},
 		},
 	},
 	variants: {

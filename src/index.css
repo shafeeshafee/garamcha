@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Solway&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,10 +9,6 @@
 
 .center-content {
 	@apply flex flex-col justify-center items-center;
-}
-
-.header-font {
-	font-family: "IBM Plex Sans", sans-serif;
 }
 
 .drop-shadow {
