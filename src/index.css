@@ -7,6 +7,10 @@
 	@apply flex flex-col justify-center items-center bg-white h-screen font-sans py-40;
 }
 
+.flex-responsive {
+	@apply lg:w-1/2 md:w-screen sm:w-screen;
+}
+
 .center-content {
 	@apply flex flex-col justify-center items-center;
 }
