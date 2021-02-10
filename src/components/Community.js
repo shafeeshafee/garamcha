@@ -7,10 +7,16 @@ const Community = () => {
 		<div>
 			<div className="xl:flex xl:flex-row lg:flex lg:flex-row justify-evenly md:flex-col sm:flex-col">
 				<div className="menu-card">
-					<img src={happyLady} alt="" className="h-5/6 w-auto rounded mb-20 shadow" />
+					<img src={happyLady} alt="happy Bangladeshi woman" className="h-5/6 w-auto rounded mb-20 shadow" />
 					<div className="center-content">
-						<h1 className="text-2xl mb-2 flex items-center">
-							<svg className="w-6 h-6 mx-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<h1 className="font-headings text-2xl mb-2 flex items-center">
+							<svg
+								className="text-primary w-6 h-6 mx-3"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
 								<path
 									strokeLinecap="round"
 									strokeLinejoin="round"
@@ -24,10 +30,16 @@ const Community = () => {
 					</div>
 				</div>
 				<div className="menu-card">
-					<img src={happyKids} alt="" className="h-5/6 w-auto rounded mb-20 shadow" />
+					<img src={happyKids} alt="happy Bangladeshi kids" className="h-5/6 w-auto rounded mb-20 shadow" />
 					<div className="center-content">
-						<h1 className="text-2xl mb-2 flex items-center">
-							<svg className="w-6 h-6 mx-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<h1 className="font-headings text-2xl mb-2 flex items-center">
+							<svg
+								className="text-primary w-6 h-6 mx-3"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
 								<path
 									strokeLinecap="round"
 									strokeLinejoin="round"
