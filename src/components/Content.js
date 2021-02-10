@@ -15,17 +15,14 @@ export const Content = () => {
 						</div>
 					</div>
 					<div class="w-full md:w-1/2 px-10">
+						<h1 class="font-bold uppercase text-2xl mb-5">Featured</h1>
 						<div class="mb-10">
-							<h1 class="font-bold uppercase text-2xl mb-5">
-								(NEW) <br />
-								Bengal Mountain Tea
-							</h1>
-							<p class="text-sm">
-								Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos, voluptatum dolorum! Laborum blanditiis consequatur,
-								voluptates, sint enim fugiat saepe, dolor fugit, magnam explicabo eaque quas id quo porro dolorum facilis.
-								<br />
+							<h1 class="text-2xl mb-5">Bengal Mountain Tea</h1>
+							<p class="text-sm text-justify">
+								Our new featured item, the Bengal Mountain Tea, is a unique blend of tea made with herbs found solely in the mountaneous
+								regions of Srimangal, Sylhet. This tea is slightly bitter with earthy tones, and promotes healthy digestion.&nbsp;&nbsp;
 								<a href="#" class="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900">
-									See more items <i class="mdi mdi-arrow-right"></i>
+									See more <i class="mdi mdi-arrow-right"></i>
 								</a>
 							</p>
 						</div>
