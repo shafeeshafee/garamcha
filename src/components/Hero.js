@@ -13,7 +13,7 @@ export const Hero = () => {
 						Garamcha
 					</h1>
 					<h2 className="font-headings text-black font-bold center-content lg:text-3xl md:text-2xl sm:text-1xl text-1xl mb-14">
-						Teas. To you, with love.
+						Teas. To you, from Bangladesh, with love.
 					</h2>
 					<Link
 						className="py-6 px-10 bg-yellow-500 flex rounded-full text-3xl hover:bg-yellow-300 transition duration-300 ease-in-out items-center"

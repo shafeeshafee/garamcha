@@ -8,6 +8,7 @@ module.exports = {
 			},
 			colors: {
 				primary: "#FDD50F",
+				secondary: "#bd9d00",
 			},
 			fontFamily: {
 				headings: ["Solway"],
