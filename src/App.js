@@ -4,9 +4,10 @@ import { Switch, Route } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import Home from "./views/Home";
-import About from "./views/About";
+import Team from "./views/Team";
 import Menu from "./views/Menu";
 import Dropdown from "./components/Dropdown";
+import Checkout from "./views/Checkout";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -34,8 +35,9 @@ function App() {
 			<Dropdown isOpen={isOpen} toggle={toggle} />
 			<Switch>
 				<Route path="/" exact component={Home} />
-				<Route path="/about" component={About} />
+				<Route path="/about" component={Team} />
 				<Route path="/menu" component={Menu} />
+				<Route path="/checkout" component={Checkout} />
 			</Switch>
 			<Footer />
 		</>
