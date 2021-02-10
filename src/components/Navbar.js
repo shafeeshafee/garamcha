@@ -3,7 +3,10 @@ import logo from "../images/logo.png";
 
 export const Navbar = ({ toggle }) => {
 	return (
-		<nav className="bg-primary sticky top-0 flex justify-between items-center h-16 text-black shadow-sm header-font " role="navigation">
+		<nav
+			className="font-headings bg-primary sticky top-0 flex justify-between items-center h-16 text-black shadow-sm header-font "
+			role="navigation"
+		>
 			<Link to="/" className="flex items-center pl-8">
 				<img src={logo} alt="" className="h-10 mx-2 " />
 				Garamcha
@@ -18,19 +21,19 @@ export const Navbar = ({ toggle }) => {
 				</svg>
 			</div>
 			<div className="pr-8 xl:flex md:block hidden">
-				<Link className="p-4" to="/">
+				<Link className="hover:bg-secondary p-4" to="/">
 					Home
 				</Link>
-				<Link className="p-4" to="/menu">
+				<Link className="hover:bg-secondary p-4" to="/menu">
 					Menu
 				</Link>
-				<Link className="p-4" to="/team">
+				<Link className="hover:bg-secondary p-4" to="/team">
 					Team
 				</Link>
-				<Link className="p-4" to="/contact">
+				<Link className="hover:bg-secondary p-4" to="/contact">
 					Contact
 				</Link>
-				<div className="flex items-center border border-gray-900">
+				<div className="bg-secondary hover:bg-white flex items-center border border-gray-900 transition duration-300 ease-in-out">
 					<Link className="p-4" to="/checkout">
 						<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path

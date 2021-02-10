@@ -15,9 +15,9 @@ export const Content = () => {
 						</div>
 					</div>
 					<div className="w-full md:w-1/2 px-10">
-						<h1 className="font-bold uppercase text-2xl mb-5">Featured</h1>
+						<h1 className="font-headings font-bold uppercase text-4xl mb-5">Featured</h1>
 						<div className="mb-10">
-							<h1 className="text-2xl mb-5">Bengal Mountain Tea</h1>
+							<h1 className="font-headings text-2xl mb-5 text-secondary">Bengal Mountain Tea</h1>
 							<p className="text-sm text-justify">
 								Our new featured item, the Bengal Mountain Tea, is a unique blend of tea made with herbs found solely in the mountaneous
 								regions of Srimangal, Sylhet. This tea is slightly bitter with earthy tones, and promotes healthy digestion.&nbsp;&nbsp;
@@ -36,7 +36,7 @@ export const Content = () => {
 								<span className="text-2xl leading-none align-baseline">.99</span>
 							</div>
 							<div className="inline-block align-bottom">
-								<button className="bg-primary opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold">
+								<button className="transition duration-300 ease-in-out bg-primary opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold">
 									<i className="mdi mdi-cart -ml-2 mr-2"></i> ORDER NOW
 								</button>
 							</div>
