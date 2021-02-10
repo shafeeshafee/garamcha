@@ -33,6 +33,7 @@ export const Navbar = ({ toggle }) => {
 				<Link className="hover:bg-secondary p-4" to="/contact">
 					Contact
 				</Link>
+				{/* Shopping Cart Badge */}
 				<div className="bg-secondary hover:bg-white flex items-center border border-gray-900 transition duration-300 ease-in-out">
 					<Link className="p-4" to="/checkout">
 						<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
