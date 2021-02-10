@@ -27,7 +27,7 @@ Our mock app starts in Bangladesh, because an idea that is so grassroots such as
 
 <br/>
 <p align="center">
-    <img width="80%" src="https://sulu.io/uploads/media/800x@2x/07/167-ezgif.gif?v=2" alt="Sulu Slideshow">
+    <img width="80%" src="https://media2.giphy.com/media/aGIbs6iLiAUt2ed9Fx/giphy.gif" alt="Gif of our app">
 </p>
 <br/>
 
