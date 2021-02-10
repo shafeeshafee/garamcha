@@ -13,7 +13,7 @@
 
 <hr>
 
-## &nbsp; Story & Purpose
+## &nbsp;Story & Purpose
 
 
 [Garamcha](https://github.com/shafeeshafee/garamcha) *(Pronounced: 'GAH'-ram-cha')* is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Our project illustrates the powerfulness of ideas. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
@@ -31,7 +31,7 @@ Our mock app starts in Bangladesh, because an idea that is so grassroots such as
 </p>
 <br/>
 
-## &nbsp; Community
+## &nbsp;Community
 
 If you believe in our mission, feel free to star this project and contribute.
 
@@ -48,12 +48,12 @@ Meanwhile, here are some inspiration videos:
 4. `npm i`
 5. `npm start`
 
-## &nbsp; Built With
+## &nbsp;Built With
 
 | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://tailwindcss.com/"><img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://www.javascript.com/"><img src="https://www.svgrepo.com/show/303206/javascript-logo.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://reactjs.org/"><img src="https://www.svgrepo.com/show/303157/react-logo.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://stripe.com/docs/api"><img src="https://www.svgrepo.com/show/314726/stripe.svg" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://commercejs.com/"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ITpGWFxn--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/2134/d92f50cd-7ad7-48ba-9970-7abecdeb2194.png" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://material-ui.com/"><img src="https://material-ui.com/static/logo.png" width="80" height="80" /></a></button> | <button style="padding: 1em; font-size: 1em; outline: none; border: none; background: white;"><a href="https://github.com/axios/axios"><img src="https://www.svgrepo.com/show/6793/server.svg" width="80" height="80" /></a></button> |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-## &nbsp; Connect With Us
+## &nbsp;Connect With Us
 
 | Ayman Omer                                                                                                                                                                                                                                                                                                                             | Shafee Ahmed                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
