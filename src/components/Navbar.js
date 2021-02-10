@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 export const Navbar = ({ toggle }) => {
 	return (
 		<nav
-			className="sticky top-0 flex justify-between items-center h-16 bg-white text-black relative shadow-sm header-font "
+			className="bg-primary sticky top-0 flex justify-between items-center h-16 bg-white text-black relative shadow-sm header-font "
 			role="navigation"
 		>
-			<Link to="/" className="pl-8">
-				ChaiLeaf
+			<Link to="/" className="flex items-center pl-8">
+				<img src={logo} alt="" className="h-10 mx-2 " />
+				Garamcha
 			</Link>
 			<div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
 				<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
