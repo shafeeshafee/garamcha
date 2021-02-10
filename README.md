@@ -2,7 +2,7 @@
 <br/>
 <p align="center">
     <a href="https://sulu.io/" target="_blank">
-        <img width="100%" src="https://i.imgur.com/43P3NIZ.png" alt="Garamcha logo">
+        <img width="100%" src="https://i.imgur.com/nhrltKk.png" alt="Garamcha logo">
     </a>
 </p>
 
