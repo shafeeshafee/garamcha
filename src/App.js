@@ -8,6 +8,7 @@ import Team from "./views/Team";
 import Menu from "./views/Menu";
 import Dropdown from "./components/Dropdown";
 import Checkout from "./views/Checkout";
+import Contact from "./views/Contact";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,7 @@ function App() {
 				<Route path="/team" component={Team} />
 				<Route path="/menu" component={Menu} />
 				<Route path="/checkout" component={Checkout} />
+				<Route path="/contact" component={Contact} />
 			</Switch>
 			<Footer />
 		</>
