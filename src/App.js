@@ -8,11 +8,10 @@ import Team from "./views/Team";
 import Menu from "./views/Menu";
 import Dropdown from "./components/Dropdown";
 import Checkout from "./views/Checkout";
-
+import Cart from "./components/Cart/Cart";
 import { commerce } from "./lib/commerce";
 
 import Contact from "./views/Contact";
-
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +24,25 @@ function App() {
     const response = await commerce.cart.retrieve();
     setCart(response);
   };
+
   useEffect(() => {
     fetchCart();
   }, []);
   const handleAddToCart = async (productId, quantity) => {
-    const item = await commerce.cart.add(productId, quantity);
-    setCart(item.cart);
+    const { cart } = await commerce.cart.add(productId, quantity);
+    setCart(cart);
+  };
+  const handleUpdteCart = async (productId, quantity) => {
+    const { cart } = await commerce.cart.update(productId, { quantity });
+    setCart(cart);
+  };
+  const handleRemoveFromCart = async (productId) => {
+    const { cart } = await commerce.cart.remove(productId);
+    setCart(cart);
+  };
+  const handleEmptyCart = async () => {
+    const { cart } = await commerce.cart.empty();
+    setCart(cart);
   };
 
   useEffect(() => {
@@ -42,7 +54,6 @@ function App() {
 
     window.addEventListener("resize", hideMenu);
 
-
     return () => {
       window.removeEventListener("resize", hideMenu);
     };
@@ -52,6 +63,7 @@ function App() {
     <>
       <Navbar toggle={toggle} totalItems={cart.total_items} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/team" component={Team} />
@@ -59,11 +71,18 @@ function App() {
           <Menu handleAdd={handleAddToCart} />
         </Route>
         <Route path="/checkout" component={Checkout} />
+        <Route path="/cart">
+          <Cart
+            cart={cart}
+            handleUpdteCart={handleUpdteCart}
+            handleRemoveFromCart={handleRemoveFromCart}
+            handleEmptyCart={handleEmptyCart}
+          />
+        </Route>
       </Switch>
       <Footer />
     </>
   );
-
 }
 
 export default App;

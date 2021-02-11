@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 import { IconButton, Badge } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 
 export const Navbar = ({ toggle, totalItems }) => {
+  const location = useLocation();
   return (
     <nav
       className="font-headings bg-primary sticky top-0 flex justify-between items-center h-16 text-black shadow-sm header-font "
@@ -52,16 +53,18 @@ export const Navbar = ({ toggle, totalItems }) => {
 							/>
 						</svg>
 					</Link> */}
-        <IconButton
-          component={Link}
-          to="/cart"
-          aria-label="Show cart items"
-          color="inherit"
-        >
-          <Badge badgeContent={totalItems} color="secondary">
-            <ShoppingCart />
-          </Badge>
-        </IconButton>
+        {location.pathname === "/menu" && (
+          <IconButton
+            component={Link}
+            to="/cart"
+            aria-label="Show cart items"
+            color="inherit"
+          >
+            <Badge badgeContent={totalItems} color="secondary">
+              <ShoppingCart />
+            </Badge>
+          </IconButton>
+        )}
       </div>
     </nav>
   );
