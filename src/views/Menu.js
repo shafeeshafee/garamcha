@@ -2,27 +2,16 @@ import React, { useState, useEffect } from "react";
 import { commerce } from "../lib/commerce";
 import Products from "../components/Products/Products";
 
-const Menu = () => {
+const Menu = ({ handleAdd }) => {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
     setProducts(data);
   };
-  const fetchCart = async () => {
-    const response = await commerce.cart.retrieve();
-    setCart(response);
-  };
-  const handleAddToCart = async (productId, quantity) => {
-    const item = await commerce.cart.add(productId, quantity);
-    setCart(item.cart);
-  };
-  console.log(cart);
 
   useEffect(() => {
     fetchProducts();
-    fetchCart();
   }, []);
 
   return (
@@ -31,7 +20,7 @@ const Menu = () => {
 
     // </div>
     <>
-      <Products products={products} onAddToCart={handleAddToCart} />
+      <Products products={products} onAddToCart={handleAdd} />
     </>
   );
 };
