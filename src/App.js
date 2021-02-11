@@ -8,7 +8,11 @@ import Team from "./views/Team";
 import Menu from "./views/Menu";
 import Dropdown from "./components/Dropdown";
 import Checkout from "./views/Checkout";
+
 import { commerce } from "./lib/commerce";
+
+import Contact from "./views/Contact";
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +42,7 @@ function App() {
 
     window.addEventListener("resize", hideMenu);
 
+
     return () => {
       window.removeEventListener("resize", hideMenu);
     };
@@ -58,6 +63,7 @@ function App() {
       <Footer />
     </>
   );
+
 }
 
 export default App;
