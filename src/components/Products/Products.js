@@ -9,7 +9,7 @@ import LoadingGif from "../../images/loading.gif";
 const Products = ({ products, onAddToCart }) => {
 	const classes = useStyles();
 
-	if (!products?.length) return <img src={LoadingGif} />;
+	if (!products?.length) return <img className="m-auto" src={LoadingGif} />;
 
 	return (
 		<main className={classes.content}>
