@@ -7,7 +7,7 @@ import Home from "./views/Home";
 import Team from "./views/Team";
 import Menu from "./views/Menu";
 import Dropdown from "./components/Dropdown";
-import Checkout from "./views/Checkout";
+import Checkout from "./components/CheckoutForm/Checkout/Checkout";
 import Cart from "./components/Cart/Cart";
 import { commerce } from "./lib/commerce";
 
@@ -16,6 +16,8 @@ import Contact from "./views/Contact";
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [cart, setCart] = useState({});
+	const [order, setOrder] = useState({});
+	const [errorMessage, setErrorMessage] = useState("");
 
 	const toggle = () => {
 		setIsOpen(!isOpen);
@@ -28,7 +30,6 @@ function App() {
 	useEffect(() => {
 		fetchCart();
 	}, []);
-
 	const handleAddToCart = async (productId, quantity) => {
 		const { cart } = await commerce.cart.add(productId, quantity);
 		setCart(cart);
@@ -44,6 +45,23 @@ function App() {
 	const handleEmptyCart = async () => {
 		const { cart } = await commerce.cart.empty();
 		setCart(cart);
+	};
+	const refreshCart = async () => {
+		const newCart = await commerce.cart.refresh();
+
+		setCart(newCart);
+	};
+
+	const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+		try {
+			const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
+
+			setOrder(incomingOrder);
+
+			refreshCart();
+		} catch (error) {
+			setErrorMessage(error.data.error.message);
+		}
 	};
 
 	useEffect(() => {
@@ -72,7 +90,9 @@ function App() {
 					<Menu handleAdd={handleAddToCart} />
 				</Route>
 				<Route path="/contact" component={Contact} />
-				<Route path="/checkout" component={Checkout} />
+				<Route exact path="/checkout">
+					<Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
+				</Route>
 				<Route path="/cart">
 					<Cart
 						cart={cart}
