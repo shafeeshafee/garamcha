@@ -9,6 +9,7 @@ import Menu from "./views/Menu";
 import Dropdown from "./components/Dropdown";
 import Checkout from "./components/CheckoutForm/Checkout/Checkout";
 import Cart from "./components/Cart/Cart";
+import Story from "./views/Story";
 import { commerce } from "./lib/commerce";
 
 import Contact from "./views/Contact";
@@ -101,6 +102,7 @@ function App() {
 						handleEmptyCart={handleEmptyCart}
 					/>
 				</Route>
+				<Route path="/story" component={Story} />
 			</Switch>
 			<Footer />
 		</>

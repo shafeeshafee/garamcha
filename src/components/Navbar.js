@@ -28,10 +28,13 @@ export const Navbar = ({ toggle, totalItems }) => {
 					Home
 				</Link>
 				<Link className="hover:bg-secondary p-4" to="/menu">
-					Menu
+					Shop
 				</Link>
 				<Link className="hover:bg-secondary p-4" to="/team">
 					Team
+				</Link>
+				<Link className="hover:bg-secondary p-4" to="/story">
+					Story
 				</Link>
 				<Link className="hover:bg-secondary p-4" to="/contact">
 					Contact

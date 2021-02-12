@@ -21,7 +21,13 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
 						+
 					</Button>
 				</div>
-				<Button variant="contained" type="button" color="secondary" onClick={() => onRemoveFromCart(item.id)}>
+				<Button
+					style={{ background: "#1F2937" }}
+					variant="contained"
+					type="button"
+					color="secondary"
+					onClick={() => onRemoveFromCart(item.id)}
+				>
 					Remove
 				</Button>
 			</CardActions>

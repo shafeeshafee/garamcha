@@ -16,7 +16,7 @@
 }
 
 .drop-shadow {
-	filter: drop-shadow(0.05em 0.1rem 0.25rem rgb(0, 0, 0));
+	filter: drop-shadow(0.1em 0.1rem 0.01rem rgba(0, 0, 0, 0.596));
 }
 
 .hero-img {
