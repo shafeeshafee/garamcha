@@ -10,8 +10,8 @@ const Dropdown = ({ isOpen, toggle }) => {
 			<Link className="p-4" to="/menu">
 				Menu
 			</Link>
-			<Link className="p-4" to="/about">
-				About
+			<Link className="p-4" to="/team">
+				Team
 			</Link>
 			<Link className="p-4" to="/contact">
 				Contact
