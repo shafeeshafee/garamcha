@@ -49,7 +49,7 @@ const AddressForm = ({ checkoutToken, test }) => {
 
 		console.log(option);
 		setShippingOptions(option);
-		setShippingOption(option[0]?.id);
+		setShippingOption(option[0].id);
 	};
 
 	useEffect(() => {
