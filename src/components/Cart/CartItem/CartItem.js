@@ -3,7 +3,6 @@ import { Typography, Button, Card, CardActions, CardContent, CardMedia } from "@
 import useStyles from "./styles";
 
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
-	console.log(item.media.source);
 	const classes = useStyles();
 	return (
 		<Card>
