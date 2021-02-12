@@ -13,10 +13,17 @@
 
 <hr>
 
-## &nbsp;Story & Purpose
+## &nbsp;Overview
 
+[Garamcha](https://github.com/shafeeshafee/garamcha) (Pronounced: *'GAH'-ram-cha')* is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Ideas are powerful. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
 
-[Garamcha](https://github.com/shafeeshafee/garamcha) *(Pronounced: 'GAH'-ram-cha')* is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Our project illustrates the powerfulness of ideas. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
+<br/>
+<p align="center">
+    <img width="80%" src="https://i.imgur.com/yUzC2CZ.jpg" alt="Gif of our app">
+</p>
+<br/>
+
+## &nbsp;Story
 
 **The idea of Garamcha:** <br/>
 The word garam in Bengali means *warm* or *hot*, and *cha* means tea. The inspiration for this word came about when we thought about how comforting it is to have a beverage fresh and ready upon coming home.
@@ -24,12 +31,6 @@ The word garam in Bengali means *warm* or *hot*, and *cha* means tea. The inspir
 Bangladesh houses one of the three largest tea gardens in the world. Although the tea industry is booming in Bangladesh, [little of it is actually exported](https://www.tea.globaltradeconcern.com/). How can we add value to those industries? The answer to that is the idea of *Garamcha*, which is to host their business online for international trade. 
 
 Our mock app starts in Bangladesh, because an idea that is so grassroots such as tea farmers in Bangladesh handcrafting tea and setting up an online market, can be applied to any business.
-
-<br/>
-<p align="center">
-    <img width="80%" src="https://i.imgur.com/yUzC2CZ.jpg" alt="Gif of our app">
-</p>
-<br/>
 
 ## &nbsp;Community
 
