@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
 	return (
@@ -7,61 +8,66 @@ export const Footer = () => {
 				<div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 						<div className="text-xs uppercase text-gray-400 font-medium mb-6">Who We Are</div>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<Link to="/story" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Our Story
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/team" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Team
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Careers
-						</a>
+						</Link>
 					</div>
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 						<div className="text-xs uppercase text-gray-400 font-medium mb-6">Contribute</div>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Volunteer
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Donate
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Share
-						</a>
+						</Link>
 					</div>
 
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 						<div className="text-xs uppercase text-gray-400 font-medium mb-6">Lab Reports</div>
 
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							USDA Organic Certification
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Changelog
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Rainforest Alliance
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Sponsors
-						</a>
+						</Link>
 					</div>
 
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 						<div className="text-xs uppercase text-gray-400 font-medium mb-6">Community</div>
-
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<a
+							href="https://github.com/shafeeshafee/garamcha"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							GitHub
 						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Discord
-						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</Link>
+						<a
+							href="https://twitter.com/ShafSunbather"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							Twitter
 						</a>
-						<a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							YouTube
-						</a>
+						</Link>
 					</div>
 				</div>
 
@@ -70,21 +76,21 @@ export const Footer = () => {
 						<div className="mt-2">© Copyright Garamcha 2021. All Rights Reserved.</div>
 
 						<div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-							<a href="#" className="w-6 mx-1">
+							<Link to="/" className="w-6 mx-1">
 								<i className="uil uil-facebook-f"></i>
-							</a>
-							<a href="#" className="w-6 mx-1">
+							</Link>
+							<Link to="/" className="w-6 mx-1">
 								<i className="uil uil-twitter-alt"></i>
-							</a>
-							<a href="#" className="w-6 mx-1">
+							</Link>
+							<Link to="/" className="w-6 mx-1">
 								<i className="uil uil-youtube"></i>
-							</a>
-							<a href="#" className="w-6 mx-1">
+							</Link>
+							<Link to="/" className="w-6 mx-1">
 								<i className="uil uil-linkedin"></i>
-							</a>
-							<a href="#" className="w-6 mx-1">
+							</Link>
+							<Link to="/" className="w-6 mx-1">
 								<i className="uil uil-instagram"></i>
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

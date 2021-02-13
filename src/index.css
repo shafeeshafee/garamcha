@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .menu-card {
-	@apply flex flex-col justify-center items-center bg-white h-screen font-sans py-3;
+	@apply flex flex-col justify-center items-center bg-white h-screen font-sans;
 }
 
 .flex-responsive {
@@ -16,7 +16,7 @@
 }
 
 .drop-shadow {
-	filter: drop-shadow(0.1em 0.1rem 0.01rem rgba(0, 0, 0, 0.596));
+	filter: drop-shadow(0.1em 0.1rem 0.1rem rgba(0, 0, 0, 0.877));
 }
 
 .hero-img {

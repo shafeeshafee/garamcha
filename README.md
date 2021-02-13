@@ -15,7 +15,9 @@
 
 ## &nbsp;Overview
 
-[Garamcha](https://github.com/shafeeshafee/garamcha) (Pronounced: *'GAH'-ram-cha')* is a demonstration of a tea company based in Bangladesh. The purpose of this project is to shine a light on **small businesses** and **ideas** that benefit the world. Ideas are powerful. We want to show the world that any idea or business, no matter how unheard of or forgotten, can have an appealing presence online.
+Using CommerceJS and Stripe API, we made an online market for a make-believe company called Garamcha (Pronounced: *'GAH'-ram-cha')*. It is a demonstration of a tea company based in Bangladesh.
+
+The purpose of this project is to shine a light on small businesses and ideas that benefit the world. **Ideas are powerful**. We want to show the world that any idea or business―no matter where it's from or who it's by―can have their ideas turn into life through creative web design.
 
 <br/>
 <p align="center">

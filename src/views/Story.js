@@ -1,15 +1,18 @@
 import React from "react";
-
-import happyKid from "../images/story/happy-child.jpg";
+import Storyline from "../components/Storyline";
 
 const Story = () => {
 	return (
-		<div className="flex justify-center items-center">
-			<h1 className="absolute text-center text-white font-bold drop-shadow xl:text-6xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-1xl">
-				Nature is sacred. Ours is a tale of sipping with love, and care. <br />
-				Read the story of Garamcha.
-			</h1>
-			<video src="/videos/tea-garden.mp4" autoPlay loop muted />
+		<div>
+			<div className="flex flex-col justify-center items-start">
+				<h1 className="p-5 w-full absolute text-left text-white font-bold drop-shadow xl:text-6xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-1xl">
+					Ours is a tale of gathering tea with love. <br />
+					<br />
+					Read our mission to make the world a better place.
+				</h1>
+				<video src="/videos/tea-garden.mp4" autoPlay loop muted />
+			</div>
+			<Storyline />
 		</div>
 	);
 };
