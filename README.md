@@ -17,7 +17,7 @@
 
 <p style="text-align: justify">Using CommerceJS and Stripe API, we made an online market for a make-believe company called Garamcha (Pronounced: <em>'GAH'-ram-cha'</em>). The demonstration is of a tea company based in Bangladesh.<p>
 
-<p style="text-align: justify">The purpose of this project is to shine a light on small businesses and ideas that benefit the world. <strong>Ideas are powerful</strong>. We want to show the world that any idea or business―no matter where it's from or who it's by―can have their ideas turn into life through creative web design.</p>
+<p style="text-align: justify">The purpose of this project is to shine a light on small businesses and ideas that benefit the world. <strong>Ideas are powerful</strong>. We want to show the world that any idea or business―no matter where it's from or who it's by―can be brought to life through creative web design.</p>
 
 <br/>
 <p align="center">
