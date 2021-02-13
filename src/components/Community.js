@@ -29,7 +29,7 @@ const Community = () => {
 						</svg>
 					}
 					cardHeader="Cultivated with Love"
-					description="All Garamcha teas are locally sourced, and certified organic"
+					description="All Garamcha teas are locally sourced, and certified organic."
 				/>
 				<Card
 					img={happyKids}

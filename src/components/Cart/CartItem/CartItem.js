@@ -3,7 +3,6 @@ import { Typography, Button, Card, CardActions, CardContent, CardMedia } from "@
 import useStyles from "./styles";
 
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
-	console.log(item.media.source);
 	const classes = useStyles();
 	return (
 		<Card>
@@ -22,7 +21,13 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
 						+
 					</Button>
 				</div>
-				<Button variant="contained" type="button" color="secondary" onClick={() => onRemoveFromCart(item.id)}>
+				<Button
+					style={{ background: "#1F2937" }}
+					variant="contained"
+					type="button"
+					color="secondary"
+					onClick={() => onRemoveFromCart(item.id)}
+				>
 					Remove
 				</Button>
 			</CardActions>

@@ -4,10 +4,12 @@ import Grid from "@material-ui/core/Grid";
 import Product from "./Product/Product";
 import useStyles from "./styles";
 
+import LoadingGif from "../../images/loading.gif";
+
 const Products = ({ products, onAddToCart }) => {
 	const classes = useStyles();
 
-	if (!products?.length) return <p>Loading...</p>;
+	if (!products?.length) return <img className="m-auto" src={LoadingGif} />;
 
 	return (
 		<main className={classes.content}>

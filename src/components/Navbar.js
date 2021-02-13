@@ -7,7 +7,7 @@ export const Navbar = ({ toggle, totalItems }) => {
 	const location = useLocation();
 	return (
 		<nav
-			className="font-headings bg-primary sticky top-0 flex justify-between items-center h-16 text-black shadow-sm header-font "
+			className="font-headings bg-primary sticky z-40 top-0 flex justify-between items-center h-16 text-black shadow-sm header-font "
 			role="navigation"
 		>
 			<Link to="/" className="flex items-center pl-8">
@@ -28,10 +28,13 @@ export const Navbar = ({ toggle, totalItems }) => {
 					Home
 				</Link>
 				<Link className="hover:bg-secondary p-4" to="/menu">
-					Menu
+					Shop
 				</Link>
 				<Link className="hover:bg-secondary p-4" to="/team">
 					Team
+				</Link>
+				<Link className="hover:bg-secondary p-4" to="/story">
+					Story
 				</Link>
 				<Link className="hover:bg-secondary p-4" to="/contact">
 					Contact
