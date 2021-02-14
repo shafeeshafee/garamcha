@@ -51,7 +51,7 @@ const Community = () => {
 						</svg>
 					}
 					cardHeader="For the Community"
-					description="We donate a pair of shoes to a child in need for every tea box ordered."
+					description="Uplift struggling communities. Every order makes a difference."
 				/>
 			</div>
 			<Subscribe />

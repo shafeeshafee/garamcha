@@ -15,7 +15,7 @@ export const Content = () => {
 						</div>
 					</div>
 					<div className="w-full md:w-1/2 px-10">
-						<h1 className="font-headings font-bold uppercase text-4xl mb-5">Featured</h1>
+						<h1 className="font-bold uppercase text-3xl mb-5">(New)</h1>
 						<div className="mb-10">
 							<h1 className="font-headings text-2xl mb-5 text-secondary">Bengal Mountain Tea</h1>
 							<p className="text-sm text-justify">
