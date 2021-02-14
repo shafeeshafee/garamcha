@@ -9,7 +9,12 @@ import LoadingGif from "../../images/loading.gif";
 const Products = ({ products, onAddToCart }) => {
 	const classes = useStyles();
 
-	if (!products?.length) return <img className="m-auto" src={LoadingGif} />;
+	if (!products?.length)
+		return (
+			<div className="min-h-screen flex items-center">
+				<img className="m-auto" src={LoadingGif} />
+			</div>
+		);
 
 	return (
 		<main className={classes.content}>
