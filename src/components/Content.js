@@ -19,8 +19,8 @@ export const Content = () => {
 						<div className="mb-10">
 							<h1 className="font-headings text-2xl mb-5 text-secondary">Bengal Mountain Tea</h1>
 							<p className="text-sm text-justify">
-								Our new featured item, the Bengal Mountain Tea, is a unique blend of tea made with herbs found solely in the mountaneous
-								regions of Srimangal, Sylhet. This tea is slightly bitter with earthy tones, and promotes healthy digestion.&nbsp;&nbsp;
+								Our new featured item, the Bengal Mountain Tea, is a unique blend of tea made with herbs found solely in the mountainous
+								regions of Srimangal, Sylhet. This tea is slightly bitter with earthy tones and promotes healthy digestion.&nbsp;&nbsp;
 								<a
 									href="#"
 									className="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900"

@@ -87,20 +87,19 @@ const Team = () => {
 				);
 		}
 	};
-
 	return (
 		<div>
 			<div className="center-content text-center">
 				<div className="xl:flex xl:flex-row lg:flex-col">
 					<img
-						className="xl:w-1/2 lg:w-screen h-auto"
+						className="xl:w-1/2 lg:w-screen h-auto clip-left"
 						src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
 						alt=""
 					/>
 					<Description name="Ayman Omer" title="Full Stack Engineer" text={personQuote("ayman")} />
 				</div>
 				<div className="xl:flex xl:flex-row-reverse lg:flex-col">
-					<img className="xl:w-1/2 lg:w-screen h-auto" src={Shafee} alt="" />
+					<img className="xl:w-1/2 lg:w-screen h-auto clip-right" src={Shafee} alt="" />
 
 					<Description name="Shafee Ahmed" title="Front End Engineer" text={personQuote("shafee")} />
 				</div>

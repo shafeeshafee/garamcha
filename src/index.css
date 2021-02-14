@@ -7,6 +7,20 @@
 	@apply flex flex-col justify-center items-center bg-white h-screen font-sans;
 }
 
+.clip-left {
+	border-radius: 0px;
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	box-shadow: 38px 38px 0px #fdd50f9a, -38px -38px 0px #ffffff;
+	z-index: 1;
+}
+
+.clip-right {
+	border-radius: 0px;
+	background: #ffffff;
+	box-shadow: -36px 36px 0px #fdd50f9a, 36px -36px 0px #ffffff;
+	z-index: 2;
+}
+
 .flex-responsive {
 	@apply lg:w-1/2 md:w-screen sm:w-screen;
 }
