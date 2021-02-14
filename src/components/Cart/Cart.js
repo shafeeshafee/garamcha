@@ -8,7 +8,7 @@ import useStyles from "./styles";
 const Cart = ({ cart, handleUpdteCart, handleRemoveFromCart, handleEmptyCart }) => {
 	const classes = useStyles();
 	const EmptyCart = () => (
-		<Typography className="h-52" variant="subtitle1">
+		<Typography className="min-h-screen" variant="subtitle1">
 			You have no items in your shopping cart,
 			<Link className={classes.link} to="/menu">
 				<span className="text-secondary ml-1">start adding some</span>

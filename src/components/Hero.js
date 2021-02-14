@@ -17,7 +17,7 @@ export const Hero = () => {
 					</h2>
 					<Link
 						className="font-headings py-6 px-10 bg-primary flex rounded-full text-3xl hover:bg-secondary transition duration-300 ease-in-out items-center"
-						to="/"
+						to="/menu"
 					>
 						Shop Now
 						<svg className="w-6 h-6 ml-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
