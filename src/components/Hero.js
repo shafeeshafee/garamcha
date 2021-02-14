@@ -5,7 +5,7 @@ import logo from "../images/logo.png";
 export const Hero = () => {
 	return (
 		<div className="lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
-			<div className="xl:inline-block sm:hidden hero-img h-screen w-full"></div>
+			<div className="hidden xl:block hero-img h-screen w-full"></div>
 			<div className="sm:text-sm h-screen w-full">
 				<div className="h-screen flex flex-col justify-center items-center">
 					<img src={logo} alt="" className="my-5" />
