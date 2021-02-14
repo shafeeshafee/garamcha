@@ -5,7 +5,7 @@ import useStyles from "./styles";
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
 	const classes = useStyles();
 	return (
-		<Card>
+		<Card className="p-10">
 			<CardMedia image={item?.media?.source} className={classes.media} />
 			<CardContent className={classes.cardContent}>
 				<Typography variant="h4">{item.name}</Typography>
