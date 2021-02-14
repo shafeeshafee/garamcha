@@ -38,7 +38,7 @@ Our mock app starts in Bangladesh, because an idea that is so grassroots such as
 
 If you believe in our mission, feel free to star this project and contribute.
 
-Meanwhile, here are some inspiration videos:
+Inspiration:
 - ["Bangladesh - Land of Stories"](https://www.youtube.com/watch?v=QNUSIOMb6vI)
 - ["Bangladesh: Raw Beauty"](https://youtu.be/rDYdeq3JW_E)
 - ["Bangladesh's Gorgeous Tea Fields"](https://www.youtube.com/watch?v=OSW-5Zd48s0)
