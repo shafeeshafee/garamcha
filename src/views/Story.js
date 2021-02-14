@@ -8,7 +8,7 @@ const Story = () => {
 				<h1 className="p-5 w-full absolute text-left text-white font-bold drop-shadow xl:text-6xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-1xl">
 					Ours is a tale of gathering tea with love. <br />
 					<br />
-					Read our mission to make the world a better place.
+					Together we can uplift communities.
 				</h1>
 				<video src="/videos/tea-garden.mp4" autoPlay loop muted />
 			</div>
