@@ -4,6 +4,8 @@ import IconButton from "@material-ui/core/IconButton";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
+import Shafee from "../images/profile/shafee-tree.jpg";
+
 const Team = () => {
 	const personQuote = (person) => {
 		switch (person) {
@@ -98,11 +100,7 @@ const Team = () => {
 					<Description name="Ayman Omer" title="Full Stack Engineer" text={personQuote("ayman")} />
 				</div>
 				<div className="xl:flex xl:flex-row-reverse lg:flex-col">
-					<img
-						className="xl:w-1/2 lg:w-screen h-auto"
-						src="https://images.pexels.com/photos/2586339/pexels-photo-2586339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-						alt=""
-					/>
+					<img className="xl:w-1/2 lg:w-screen h-auto" src={Shafee} alt="" />
 
 					<Description name="Shafee Ahmed" title="Front End Engineer" text={personQuote("shafee")} />
 				</div>
