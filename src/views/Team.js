@@ -5,6 +5,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 import Shafee from "../images/profile/shafee-tree.jpg";
+import Ayman from "../images/profile/aymen-kid.jpg";
 
 const Team = () => {
 	const personQuote = (person) => {
@@ -89,18 +90,13 @@ const Team = () => {
 	};
 	return (
 		<div>
-			<div className="center-content text-center">
-				<div className="xl:flex xl:flex-row lg:flex-col">
-					<img
-						className="xl:w-1/2 lg:w-screen h-auto clip-left"
-						src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-						alt=""
-					/>
+			<div className="center-content text-center w-3/4 m-auto">
+				<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
+					<img className="m-auto w-96 lg:w-1/2 h-auto clip-left" src={Ayman} alt="" />
 					<Description name="Ayman Omer" title="Full Stack Engineer" text={personQuote("ayman")} />
 				</div>
-				<div className="xl:flex xl:flex-row-reverse lg:flex-col">
-					<img className="xl:w-1/2 lg:w-screen h-auto clip-right" src={Shafee} alt="" />
-
+				<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
+					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Shafee} alt="" />
 					<Description name="Shafee Ahmed" title="Front End Engineer" text={personQuote("shafee")} />
 				</div>
 			</div>
