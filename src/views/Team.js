@@ -92,7 +92,7 @@ const Team = () => {
 		<div>
 			<div className="center-content text-center w-3/4 m-auto">
 				<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
-					<img className="m-auto w-96 lg:w-1/2 h-auto clip-left" src={Ayman} alt="" />
+					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-left" src={Ayman} alt="" />
 					<Description name="Ayman Omer" title="Full Stack Engineer" text={personQuote("ayman")} />
 				</div>
 				<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
