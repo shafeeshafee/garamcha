@@ -21,7 +21,7 @@
 
 <br/>
 <p align="center">
-    <img width="80%" src="https://i.imgur.com/yUzC2CZ.jpg" alt="Gif of our app">
+    <img width="80%" src="https://i.imgur.com/otoKfKM.jpg" alt="Gif of our app">
 </p>
 <br/>
 
