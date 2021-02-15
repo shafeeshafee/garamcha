@@ -5,7 +5,7 @@ import useStyles from "./styles";
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
 	const classes = useStyles();
 	return (
-		<Card className="p-10">
+		<Card className="p-3 h-full flex justify-between flex-col">
 			<CardMedia image={item?.media?.source} className={classes.media} />
 			<CardContent className={classes.cardContent}>
 				<Typography variant="h4">{item.name}</Typography>
