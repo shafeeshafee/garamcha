@@ -4,8 +4,11 @@ import { IconButton, Badge } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 
 const Dropdown = ({ isOpen, toggle, totalItems }) => {
+	// position: fixed;
+	// width: 100%;
+	// z-index: 999;
 	return (
-		<div className={isOpen ? "grid grid-rows-4 text-center items-center bg-yellow-500" : "hidden"} onClick={toggle}>
+		<div className={isOpen ? "grid grid-rows-4 fixed w-full z-999 text-center items-center bg-yellow-500" : "hidden"} onClick={toggle}>
 			<Link className="p-4" to="/">
 				Home
 			</Link>
