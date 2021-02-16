@@ -21,7 +21,9 @@
 
 <br/>
 <p align="center">
-    <img width="80%" src="https://i.imgur.com/otoKfKM.jpg" alt="Gif of our app">
+    <img width="80%" src="./readme-img/2.png" alt="Gif of our app">
+    <img width="80%" src="./readme-img/3.png" alt="Gif of our app">
+    <img width="80%" src="./readme-img/1.png" alt="Gif of our app">
 </p>
 <br/>
 
