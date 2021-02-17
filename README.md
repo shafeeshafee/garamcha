@@ -49,8 +49,9 @@ Inspiration:
 
 1. Register with Stripe and CommerceJS for API access
 2. Clone this [repository](https://github.com/shafeeshafee/garamcha)
-3. `npm i`
-4. `npm start`
+3. Create a .env with corresponding environmental variables
+4. `npm i`
+5. `npm start`
 
 ## &nbsp;Built With
 
