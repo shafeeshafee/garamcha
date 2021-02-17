@@ -47,11 +47,10 @@ Inspiration:
 
 ## &nbsp; Installation
 
-1. Get a free API key from Stripe
-2. Register with Commerce.js
-3. Clone this [repository](https://github.com/shafeeshafee/garamcha)
-4. `npm i`
-5. `npm start`
+1. Register with Stripe and CommerceJS for API access
+2. Clone this [repository](https://github.com/shafeeshafee/garamcha)
+3. `npm i`
+4. `npm start`
 
 ## &nbsp;Built With
 
