@@ -6,6 +6,8 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 import Shafee from "../images/profile/shafee-tree.jpg";
 import Ayman from "../images/profile/aymen-kid.jpg";
+import Julian from "../images/profile/julian.jpg";
+import Stephanie from "../images/profile/stephanie.jpg";
 
 const Team = () => {
 	const personQuote = (person) => {
@@ -32,6 +34,39 @@ const Team = () => {
 								selected
 								aria-label="GitHub"
 								onClick={() => window.open("https://github.com/aymanjebril2")}
+								style={{
+									backgroundColor: "transparent",
+									outline: "none",
+									border: "none",
+								}}
+							>
+								<GitHubIcon style={{ color: "#bd9d00", fontSize: "3rem", marginTop: "1em", textAlign: "center", cursor: "pointer" }} />
+							</IconButton>
+						</div>
+					</div>
+				);
+			case "julian":
+				return (
+					<div className="text-justify">
+						<p>
+							"This project was something I saw my colleagues Ayman and Shafee present during class. But I knew the project idea had a
+							meaning that went beyond the classroom environment. So I joined the Garamcha project to bring its functionality to the next
+							level. My role for Garamcha was back end development as I integrated the ability for users to have their own user account with
+							sign-up and login features."
+						</p>
+						<div className="flex justify-around items-center">
+							<IconButton
+								selected
+								aria-label="LinkedIn"
+								onClick={() => window.open("https://www.linkedin.com/in/julian-q-379184ba/")}
+								style={{ backgroundColor: "transparent" }}
+							>
+								<LinkedInIcon style={{ color: "#bd9d00", fontSize: "3.3rem", marginTop: "1em", textAlign: "center", cursor: "pointer" }} />
+							</IconButton>
+							<IconButton
+								selected
+								aria-label="GitHub"
+								onClick={() => window.open("https://github.com/HaxagonusD")}
 								style={{
 									backgroundColor: "transparent",
 									outline: "none",
@@ -79,6 +114,39 @@ const Team = () => {
 						</p>
 					</div>
 				);
+			case "stephanie":
+				return (
+					<div className="text-justify">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa recusandae officia nihil, itaque veniam cumque cupiditate ad
+							cum, perspiciatis eos dolorem autem eveniet quaerat totam consequuntur error harum et libero.
+							<div className="flex justify-around items-center">
+								<IconButton
+									selected
+									aria-label="LinkedIn"
+									onClick={() => window.open("https://www.linkedin.com/in/stephanieapena/")}
+									style={{ backgroundColor: "transparent" }}
+								>
+									<LinkedInIcon
+										style={{ color: "#bd9d00", fontSize: "3.3rem", marginTop: "1em", textAlign: "center", cursor: "pointer" }}
+									/>
+								</IconButton>
+								<IconButton
+									selected
+									aria-label="GitHub"
+									onClick={() => window.open("https://github.com/stephp23")}
+									style={{
+										backgroundColor: "transparent",
+										outline: "none",
+										border: "none",
+									}}
+								>
+									<GitHubIcon style={{ color: "#bd9d00", fontSize: "3rem", marginTop: "1em", textAlign: "center", cursor: "pointer" }} />
+								</IconButton>
+							</div>
+						</p>
+					</div>
+				);
 			default:
 				return (
 					<p>
@@ -89,15 +157,23 @@ const Team = () => {
 		}
 	};
 	return (
-		<div>
+		<div className="py-10">
 			<div className="center-content text-center w-3/4 m-auto">
 				<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
 					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-left" src={Ayman} alt="" />
-					<Description name="Ayman Omer" title="Full Stack Engineer" text={personQuote("ayman")} />
+					<Description name="Ayman Omer" title="Full Stack Developer" text={personQuote("ayman")} />
 				</div>
 				<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
 					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Shafee} alt="" />
-					<Description name="Shafee Ahmed" title="Front End Engineer" text={personQuote("shafee")} />
+					<Description name="Shafee Ahmed" title="Front End Developer" text={personQuote("shafee")} />
+				</div>
+				<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
+					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Julian} alt="" />
+					<Description name="Julian Q" title="Back End Developer" text={personQuote("julian")} />
+				</div>
+				<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
+					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Stephanie} alt="" />
+					<Description name="Stephanie Pena" title="Project Advocate" text={personQuote("stephanie")} />
 				</div>
 			</div>
 		</div>
