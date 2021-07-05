@@ -41,3 +41,11 @@
 	background: url("https://images.unsplash.com/photo-1579765338032-9f6b3614ff07?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80")
 		center center / cover;
 }
+
+.signup-image {
+	background: url("https://images.unsplash.com/photo-1622977265115-cce36eb43f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+}
+
+.login-image {
+	background: url("https://images.unsplash.com/photo-1593616196108-293552c072dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+}

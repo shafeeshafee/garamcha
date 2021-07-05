@@ -18,6 +18,7 @@ export default makeStyles(() => ({
 		justifyContent: "flex-end",
 	},
 	cardContent: {
+		fontFamily: "serif",
 		display: "flex",
 		justifyContent: "space-between",
 	},

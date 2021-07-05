@@ -6,6 +6,8 @@ import { Navbar } from "./components/Navbar";
 import Home from "./views/Home";
 import Team from "./views/Team";
 import Menu from "./views/Menu";
+import LogIn from "./views/LogIn";
+import SignUp from "./views/SignUp";
 import Dropdown from "./components/Dropdown";
 import Checkout from "./components/CheckoutForm/Checkout/Checkout";
 import Cart from "./components/Cart/Cart";
@@ -86,6 +88,8 @@ function App() {
 
 			<Switch>
 				<Route path="/" exact component={Home} />
+				<Route path="/signup" exact component={SignUp} />
+				<Route path="/login" exact component={LogIn} />
 				<Route path="/team" component={Team} />
 				<Route path="/menu">
 					<Menu handleAdd={handleAddToCart} />
