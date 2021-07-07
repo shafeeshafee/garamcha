@@ -1,8 +1,4 @@
-{
-  "name": "tailwindcss-react-v1-yt",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+
     "@chec/commerce.js": "^2.3.1",
     "@craco/craco": "^6.1.1",
     "@iconscout/unicons": "^3.0.6",
