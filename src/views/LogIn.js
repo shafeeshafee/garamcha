@@ -1,4 +1,5 @@
 import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 function LogIn() {
 	return (
@@ -17,9 +18,6 @@ function LogIn() {
 					</div>
 				</div>
 				<div className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0">
-					{/* <div className="absolute lg:hidden z-10 inset-0 bg-gray-100 bg-no-repeat bg-cover items-center">
-						<div className="absolute bg-black opacity-60 inset-0 z-0"></div>
-					</div> */}
 					<div className="w-full py-6 z-20">
 						<img className="m-auto" src={logo} alt="logo" />
 						<h1 className="font-headings bg-primary p-2 text-black lg:text-8xl md:text-4xl sm:text-3xl text-2xl font-bold mb-14 hidden sm:flex justify-center items-center ">
@@ -46,7 +44,7 @@ function LogIn() {
 								/>
 							</div>
 							<div className="text-right text-gray-400 hover:text-gray-800">
-								<a href="#">Don't have an account?</a>
+								<Link to="/signup">Don't have an account?</Link>
 							</div>
 							<div className="px-4 pb-2 pt-4">
 								<button className="uppercase block w-full p-4 text-lg rounded-full transition ease-in-out text-gray-800 bg-primary hover:bg-secondary focus:outline-none hover:text-gray-100">

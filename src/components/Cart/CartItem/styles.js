@@ -15,4 +15,7 @@ export default makeStyles(() => ({
 		display: "flex",
 		alignItems: "center",
 	},
+	cartTitle: {
+		fontFamily: "serif",
+	},
 }));

@@ -1,6 +1,11 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+	const { register, handleSubmit } = useForm();
+
+	const onSubmit = (data) => console.log(data);
+
 	return (
 		<div>
 			<div className="contact-img relative flex items-top justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
@@ -75,16 +80,14 @@ const Contact = () => {
 								</div>
 							</div>
 
-							<form className="p-6 flex flex-col justify-center">
+							<form onSubmit={handleSubmit(onSubmit)} className="p-6 flex flex-col justify-center">
 								<div className="flex flex-col">
-									<label for="name" className="hidden">
-										Full Name
-									</label>
 									<input
 										type="name"
 										name="name"
 										id="name"
 										placeholder="Full Name"
+										{...register("fullName")}
 										className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-primary focus:outline-none"
 									/>
 								</div>
@@ -98,19 +101,18 @@ const Contact = () => {
 										name="email"
 										id="email"
 										placeholder="Email"
+										{...register("email")}
 										className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-primary focus:outline-none"
 									/>
 								</div>
 
 								<div className="flex flex-col mt-2">
-									<label for="tel" className="hidden">
-										Number
-									</label>
 									<input
 										type="tel"
 										name="tel"
 										id="tel"
 										placeholder="Telephone Number (Optional)"
+										{...register("phoneNum")}
 										className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-primary focus:outline-none"
 									/>
 								</div>
