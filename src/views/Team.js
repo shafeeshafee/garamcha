@@ -1,4 +1,6 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
 import Description from "../components/Description";
 import IconButton from "@material-ui/core/IconButton";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -158,24 +160,26 @@ const Team = () => {
 	};
 	return (
 		<div className="py-10">
-			<div className="center-content text-center w-3/4 m-auto">
-				<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
-					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-left" src={Ayman} alt="" />
-					<Description name="Ayman Omer" title="Full Stack Developer" text={personQuote("ayman")} />
+			<Fade big>
+				<div className="center-content text-center w-3/4 m-auto">
+					<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
+						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-left" src={Ayman} alt="" />
+						<Description name="Ayman Omer" title="Full Stack Developer" text={personQuote("ayman")} />
+					</div>
+					<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
+						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Stephanie} alt="" />
+						<Description name="Stephanie Pena" title="Customer Success Engineer" text={personQuote("stephanie")} />
+					</div>
+					<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
+						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-left" src={Shafee} alt="" />
+						<Description name="Shafee Ahmed" title="Front End Developer" text={personQuote("shafee")} />
+					</div>
+					<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
+						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Julian} alt="" />
+						<Description name="Julian Q" title="Full Stack Developer" text={personQuote("julian")} />
+					</div>
 				</div>
-				<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
-					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Shafee} alt="" />
-					<Description name="Shafee Ahmed" title="Front End Developer" text={personQuote("shafee")} />
-				</div>
-				<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
-					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Julian} alt="" />
-					<Description name="Julian Q" title="Back End Developer" text={personQuote("julian")} />
-				</div>
-				<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
-					<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Stephanie} alt="" />
-					<Description name="Stephanie Pena" title="Project Advocate" text={personQuote("stephanie")} />
-				</div>
-			</div>
+			</Fade>
 		</div>
 	);
 };
