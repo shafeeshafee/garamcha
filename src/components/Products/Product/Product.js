@@ -9,6 +9,12 @@ const Product = ({ product, onAddToCart }) => {
 
 	const handleAddToCart = () => onAddToCart(product.id, 1);
 
+	const user = localStorage.getItem("user-info");
+
+	// useEffect(() => {
+	// 	if (!user) history.push("/login");
+	// }, [history]);
+
 	return (
 		// <Card className={classes.root}>
 		<Card className={classes.root}>
@@ -25,9 +31,11 @@ const Product = ({ product, onAddToCart }) => {
 				<Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" component="p" />
 			</CardContent>
 			<CardActions disableSpacing className={classes.cardActions}>
-				<IconButton aria-label="Add to Cart" onClick={() => handleAddToCart(product.id, 1)}>
-					<AddShoppingCart />
-				</IconButton>
+				{user && (
+					<IconButton aria-label="Add to Cart" onClick={() => handleAddToCart(product.id, 1)}>
+						<AddShoppingCart />
+					</IconButton>
+				)}
 			</CardActions>
 		</Card>
 	);

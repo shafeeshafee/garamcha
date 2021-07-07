@@ -16,9 +16,13 @@ const Products = ({ products, onAddToCart }) => {
 			</div>
 		);
 
+	const user = localStorage.getItem("user-info");
+
 	return (
 		<div>
-			<h1 className="w-full m-auto p-5 text-center absolute font-headings text-gray-800 font-bold text-6xl">Our Collection</h1>
+			<h1 className="w-full m-auto p-5 text-center absolute font-headings text-gray-800 font-bold text-6xl">
+				{user ? "Our Collection" : ""}
+			</h1>
 			<main className={classes.content}>
 				<div className={classes.toolbar} />
 				<Grid container justify="center" spacing={4}>
