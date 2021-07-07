@@ -5,6 +5,8 @@ import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
+import loadingGif from "../images/22.gif";
+
 function LogIn() {
 	const history = useHistory();
 
@@ -12,6 +14,7 @@ function LogIn() {
 	const passwordRef = useRef(null);
 
 	const [noLoginErrors, setNoLoginErrors] = useState(true);
+	const [isLogging, setIsLogging] = useState(false);
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -31,10 +34,12 @@ function LogIn() {
 				localStorage.setItem("user-info", data);
 				history.push("/");
 				history.go(0);
+				setIsLogging(true);
 			})
 			.catch((err) => {
 				console.error(err);
 				setNoLoginErrors(false);
+				setIsLogging(false);
 			});
 	};
 
@@ -95,7 +100,7 @@ function LogIn() {
 									onClick={handleSubmit}
 									className="uppercase block w-full p-4 text-lg rounded-full transition ease-in-out text-gray-800 bg-primary hover:bg-secondary focus:outline-none hover:text-gray-100"
 								>
-									Sign In
+									{isLogging ? <div className="loader"></div> : <p>Log In</p>}
 								</button>
 							</div>
 
