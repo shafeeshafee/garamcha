@@ -14,38 +14,53 @@ export const Footer = () => {
 						<Link to="/team" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
 							Team
 						</Link>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-							Careers
+						<Link to="/contact" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+							Contact
 						</Link>
 					</div>
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 						<div className="text-xs uppercase text-gray-400 font-medium mb-6">Contribute</div>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-							Volunteer
-						</Link>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<a
+							href="https://irusa.org/asia/bangladesh/"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							Donate
-						</Link>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</a>
+						<a
+							href="https://www.gooverseas.com/volunteer-abroad/bangladesh"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
+							Volunteer
+						</a>
+						<a
+							href="https://github.com/shafeeshafee/garamcha"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							Share
-						</Link>
+						</a>
 					</div>
 
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 						<div className="text-xs uppercase text-gray-400 font-medium mb-6">Lab Reports</div>
 
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<a
+							href="https://www.thedailystar.net/lifestyle/special-feature/news/tale-tea-bangladesh-the-world-1631953"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							USDA Organic Certification
-						</Link>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-							Changelog
-						</Link>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</a>
+						<a
+							href="https://www.rainforest-alliance.org/articles/rainforest-alliance-certified-tea"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							Rainforest Alliance
-						</Link>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						</a>
+						<a
+							href="https://www.theknowledgehouse.org/"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							Sponsors
-						</Link>
+						</a>
 					</div>
 
 					<div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
@@ -65,9 +80,12 @@ export const Footer = () => {
 						>
 							Twitter
 						</a>
-						<Link to="/" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+						<a
+							href="https://youtu.be/L12RURX5UlU"
+							className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+						>
 							YouTube
-						</Link>
+						</a>
 					</div>
 				</div>
 
@@ -76,21 +94,7 @@ export const Footer = () => {
 						<div className="mt-2">© Copyright Garamcha 2021. All Rights Reserved.</div>
 
 						<div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-							<Link to="/" className="w-6 mx-1">
-								<i className="uil uil-facebook-f"></i>
-							</Link>
-							<Link to="/" className="w-6 mx-1">
-								<i className="uil uil-twitter-alt"></i>
-							</Link>
-							<Link to="/" className="w-6 mx-1">
-								<i className="uil uil-youtube"></i>
-							</Link>
-							<Link to="/" className="w-6 mx-1">
-								<i className="uil uil-linkedin"></i>
-							</Link>
-							<Link to="/" className="w-6 mx-1">
-								<i className="uil uil-instagram"></i>
-							</Link>
+							<p className="opacity-50">Sip responsibly! 🍵</p>
 						</div>
 					</div>
 				</div>
