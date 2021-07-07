@@ -1,7 +1,38 @@
+import { useRef } from "react";
+import axios from "axios";
+import qs from "qs";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function SignUp() {
+	const history = useHistory();
+
+	const emailRef = useRef(null);
+	const passwordRef = useRef(null);
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		axios({
+			method: "post",
+			data: qs.stringify({
+				email: emailRef.current.value,
+				password: passwordRef.current.value,
+			}),
+			url: "https://garamcha-authentication-server.herokuapp.com/signup",
+			headers: {
+				"content-type": "application/x-www-form-urlencoded;charset=utf-8",
+			},
+		}).then((res) => {
+			let data = res.data;
+			if (data) {
+				history.push("/login");
+			} else {
+				alert("There was an error signing up.");
+			}
+		});
+	};
+
 	return (
 		<div>
 			<section className="min-h-screen flex items-stretch text-white font-headings">
@@ -12,42 +43,47 @@ function SignUp() {
 						<p className="text-3xl my-4">All the right ingredients packed into a cup, and the result is happiness with each sip.</p>
 					</div>
 					<div className="bottom-0 absolute pt-3 text-center right-0 left-0 flex justify-center space-x-4">
-						<p className="italic opacity-50 p-2 font-sans">
+						<p className="italic opacity-50 pb-24 font-sans">
 							“You can never get a cup of tea large enough or a book long enough to suit me.” ― C.S. Lewis
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0">
+				<div className="lg:w-1/2 m-auto w-full flex items-center justify-center text-center md:px-16 px-0 z-0">
 					<div className="w-full py-6 z-20">
 						<img className="m-auto" src={logo} alt="logo" />
 						<h1 className="font-headings bg-primary p-2 text-black lg:text-8xl md:text-4xl sm:text-3xl text-2xl font-bold mb-14 hidden sm:flex justify-center items-center ">
 							Garamcha
 						</h1>
-
+						<p className="text-lg text-gray-700">Teas - to you, with love. Join us. 💛</p>
 						<form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
 							<div className="pb-2 pt-4">
 								<input
+									ref={emailRef}
 									type="email"
 									name="email"
 									id="email"
 									placeholder="Email"
-									className="block w-full p-4 text-lg rounded-sm bg-gray-200"
+									className="block w-full p-4 text-lg rounded-sm text-black bg-gray-200"
 								/>
 							</div>
 							<div className="pb-2 pt-4">
 								<input
-									className="block w-full p-4 text-lg rounded-sm bg-gray-200"
+									ref={passwordRef}
+									className="block w-full p-4 text-lg rounded-sm  text-black bg-gray-200"
 									type="password"
 									name="password"
 									id="password"
 									placeholder="Password"
 								/>
 							</div>
-							<div className="text-right text-gray-400 hover:text-gray-800">
+							<div className="text-right text-gray-700 hover:text-black">
 								<Link to="/login">Already have an account?</Link>
 							</div>
 							<div className="px-4 pb-2 pt-4">
-								<button className="uppercase block w-full p-4 text-lg rounded-full transition ease-in-out text-gray-800 bg-primary hover:bg-secondary focus:outline-none hover:text-gray-100">
+								<button
+									onClick={handleSubmit}
+									className="uppercase block w-full p-4 text-lg rounded-full transition ease-in-out text-gray-800 bg-primary hover:bg-secondary focus:outline-none hover:text-gray-100"
+								>
 									Sign Up
 								</button>
 							</div>

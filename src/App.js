@@ -1,5 +1,5 @@
-import "./App.css";
 import React, { useState, useEffect } from "react";
+import Scroll from "./Scroll";
 import { Switch, Route } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
@@ -81,15 +81,19 @@ function App() {
 		};
 	}, [isOpen]);
 
+	const user = localStorage.getItem("user-info");
+
 	return (
 		<>
-			<Navbar toggle={toggle} totalItems={cart.total_items} />
+			<Scroll />
+			{user && <Navbar toggle={toggle} totalItems={cart.total_items} />}
 			<Dropdown isOpen={isOpen} toggle={toggle} />
 
 			<Switch>
-				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
 				<Route path="/login" exact component={LogIn} />
+				<Route path="/" exact component={Home} />
+
 				<Route path="/team" component={Team} />
 				<Route path="/menu">
 					<Menu handleAdd={handleAddToCart} />

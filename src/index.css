@@ -44,10 +44,14 @@
 
 .signup-image {
 	background: url("https://images.unsplash.com/photo-1622977265115-cce36eb43f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .login-image {
 	background: url("https://images.unsplash.com/photo-1593616196108-293552c072dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .MuiTypography-h5,
@@ -58,4 +62,10 @@
 
 .MuiGrid-justify-xs-center {
 	padding-bottom: 6rem !important;
+}
+
+.dropdown:focus-within .dropdown-menu {
+	opacity: 1;
+	transform: translate(0) scale(1);
+	visibility: visible;
 }

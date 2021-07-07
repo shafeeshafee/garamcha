@@ -1,53 +1,100 @@
+import { useRef, useState } from "react";
+import axios from "axios";
+import qs from "qs";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function LogIn() {
+	const history = useHistory();
+
+	const emailRef = useRef(null);
+	const passwordRef = useRef(null);
+
+	const [noLoginErrors, setNoLoginErrors] = useState(true);
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		axios({
+			method: "post",
+			data: qs.stringify({
+				email: emailRef.current.value,
+				password: passwordRef.current.value,
+			}),
+			url: "https://garamcha-authentication-server.herokuapp.com/login",
+			headers: {
+				"content-type": "application/x-www-form-urlencoded;charset=utf-8",
+			},
+		})
+			.then((res) => {
+				let data = res.data;
+				localStorage.setItem("user-info", data);
+				history.push("/");
+				history.go(0);
+			})
+			.catch((err) => {
+				console.error(err);
+				setNoLoginErrors(false);
+			});
+	};
+
 	return (
 		<div>
 			<section className="min-h-screen flex items-stretch text-white font-headings">
-				<div className="lg:flex w-5/12 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center login-image">
+				<div className="lg:flex w-5/12 hidden relative items-center login-image">
 					<div className="absolute bg-black opacity-60 inset-0 z-0"></div>
 					<div className="w-full px-24 z-10">
 						<h1 className="text-5xl font-bold text-left tracking-wide">Bangladesh is the 10th largest tea producer in the world. </h1>
 						<p className="text-3xl my-4">Many of the teas are grown in fertile, rich earth where it is regularly rainwashed.</p>
 					</div>
 					<div className="bottom-0 absolute pt-3 text-center right-0 left-0 flex justify-center space-x-4">
-						<p className="italic opacity-50 p-2 font-sans">
+						<p className="italic opacity-50 pb-24 font-sans">
 							“Tea is quiet and our thirst for tea is never far from our craving for beauty.” – James Norwood Pratt
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0">
+				<div className="lg:w-1/2 m-auto w-full flex items-center justify-center text-center md:px-16 px-0 z-0">
 					<div className="w-full py-6 z-20">
 						<img className="m-auto" src={logo} alt="logo" />
 						<h1 className="font-headings bg-primary p-2 text-black lg:text-8xl md:text-4xl sm:text-3xl text-2xl font-bold mb-14 hidden sm:flex justify-center items-center ">
 							Garamcha
 						</h1>
-
-						<form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+						<p className={`text-lg ${noLoginErrors ? "text-gray-700" : "text-red-700"}`}>
+							{noLoginErrors ? `Please log in to continue to Garamcha 🌟` : "There was an error in one of the fields."}
+						</p>
+						<form
+							action="https://garamcha-authentication-server.herokuapp.com/login"
+							method="post"
+							className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto"
+						>
 							<div className="pb-2 pt-4">
 								<input
+									ref={emailRef}
 									type="email"
 									name="email"
 									id="email"
 									placeholder="Email"
-									className="block w-full p-4 text-lg rounded-sm bg-gray-200"
+									className="block w-full p-4 text-lg rounded-sm text-black bg-gray-200"
 								/>
 							</div>
 							<div className="pb-2 pt-4">
 								<input
-									className="block w-full p-4 text-lg rounded-sm bg-gray-200"
+									ref={passwordRef}
+									className="block w-full p-4 text-lg rounded-sm text-black bg-gray-200"
 									type="password"
 									name="password"
 									id="password"
 									placeholder="Password"
 								/>
 							</div>
-							<div className="text-right text-gray-400 hover:text-gray-800">
+							<div className="text-right text-gray-700 hover:text-black">
 								<Link to="/signup">Don't have an account?</Link>
 							</div>
 							<div className="px-4 pb-2 pt-4">
-								<button className="uppercase block w-full p-4 text-lg rounded-full transition ease-in-out text-gray-800 bg-primary hover:bg-secondary focus:outline-none hover:text-gray-100">
+								<button
+									onClick={handleSubmit}
+									className="uppercase block w-full p-4 text-lg rounded-full transition ease-in-out text-gray-800 bg-primary hover:bg-secondary focus:outline-none hover:text-gray-100"
+								>
 									Sign In
 								</button>
 							</div>
