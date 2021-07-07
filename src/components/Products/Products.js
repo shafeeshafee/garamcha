@@ -17,16 +17,19 @@ const Products = ({ products, onAddToCart }) => {
 		);
 
 	return (
-		<main className={classes.content}>
-			<div className={classes.toolbar} />
-			<Grid container justify="center" spacing={4}>
-				{products.map((product) => (
-					<Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
-						<Product product={product} onAddToCart={onAddToCart} />
-					</Grid>
-				))}
-			</Grid>
-		</main>
+		<div>
+			<h1 className="w-full m-auto p-5 text-center absolute font-headings text-gray-800 font-bold text-6xl">Our Collection</h1>
+			<main className={classes.content}>
+				<div className={classes.toolbar} />
+				<Grid container justify="center" spacing={4}>
+					{products.map((product) => (
+						<Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
+							<Product product={product} onAddToCart={onAddToCart} />
+						</Grid>
+					))}
+				</Grid>
+			</main>
+		</div>
 	);
 };
 

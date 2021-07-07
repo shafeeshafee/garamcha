@@ -56,7 +56,18 @@
 
 .MuiTypography-h5,
 .MuiTypography-subtitle1,
-.MuiTypography-h3 {
+.MuiTypography-h3,
+.MuiTypography-h4 {
+	font-family: "Solway" !important;
+}
+
+#root
+	> div.MuiContainer-root.MuiContainer-maxWidthLg
+	> div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3
+	> div
+	> div
+	> div.MuiCardContent-root.makeStyles-cardContent-15
+	> h4 {
 	font-family: "Solway" !important;
 }
 
@@ -88,4 +99,8 @@
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+.MuiIconButton-root:focus {
+	outline: none !important;
 }

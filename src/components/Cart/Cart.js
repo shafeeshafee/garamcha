@@ -58,13 +58,16 @@ const Cart = ({ cart, handleUpdteCart, handleRemoveFromCart, handleEmptyCart }) 
 	);
 
 	return (
-		<Container>
-			<div className={classes.toolbar} />
-			<Typography className={classes.title} variant="h3" gutterBottom>
-				Your Shopping Cart
-			</Typography>
-			{!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
-		</Container>
+		<div className="pb-24 w-11/12">
+			<Container>
+				<div className={classes.toolbar} />
+				<Typography className={classes.title} variant="h3" gutterBottom>
+					Your Shopping Cart
+				</Typography>
+				{!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
+			</Container>
+			<div className="border border-t-2 border-gray-400 w-6/12 float-right mt-10"></div>
+		</div>
 	);
 };
 
