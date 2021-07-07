@@ -49,3 +49,13 @@
 .login-image {
 	background: url("https://images.unsplash.com/photo-1593616196108-293552c072dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
 }
+
+.MuiTypography-h5,
+.MuiTypography-subtitle1,
+.MuiTypography-h3 {
+	font-family: "Solway" !important;
+}
+
+.MuiGrid-justify-xs-center {
+	padding-bottom: 6rem !important;
+}
