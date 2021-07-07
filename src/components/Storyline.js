@@ -39,7 +39,7 @@ const Storyline = () => {
 				<p>
 					The purpose of this project is to shine a light on communities and ideas that benefit the world.
 					<strong> Ideas are powerful.</strong> We want to show the world that any idea or business―no matter where it's from or who it's
-					by―can have their ideas turn into life through creative web design.
+					by―can be brought to life through creative web design.
 				</p>
 				<br />
 				<p>
