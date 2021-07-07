@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 .menu-card {
 	@apply flex flex-col justify-center items-center bg-white h-screen font-sans;
 }
