@@ -52,7 +52,7 @@ const Contact = () => {
 							<img className="w-36 h-36 object-cover rounded-full mx-auto shadow-lg" src={steph} alt="User avatar" />
 							<p className="capitalize text-xl mt-1 font-bold py-1">Stephanie Pena</p>
 							<span className="flex items-center border rounded-full w-full pr-2 justify-center mx-auto mt-2 mb-12">
-								<p className="text-yellow-800">Customer Success Engineer</p>
+								<p className="text-yellow-800">Ops Support Engineer</p>
 							</span>
 							<a href="mailto:stephp23@gmail.com ">
 								<button className="rounded-md bg-gradient-to-r bg-primary hover:bg-secondary hover:text-white text-xl text-gray-800 pt-3 py-4 px-5 inline transition ease-in-out">
