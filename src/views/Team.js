@@ -120,8 +120,10 @@ const Team = () => {
 				return (
 					<div className="text-justify">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa recusandae officia nihil, itaque veniam cumque cupiditate ad
-							cum, perspiciatis eos dolorem autem eveniet quaerat totam consequuntur error harum et libero.
+							"To me, an idea like Garamcha was just the thing small businesses need. As the online world gets more expansive everyday, so
+							does the need for businesses to have their place there. I'm Stephanie, an operation support engineer, and a former higher
+							educational professor and STEM researcher. My journey started out at The Knowledge House as a coding fellow and today I am
+							pursuing a BS in Computer Science at Oregon State University."
 							<div className="flex justify-around items-center">
 								<IconButton
 									selected
@@ -168,11 +170,11 @@ const Team = () => {
 					</div>
 					<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
 						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Stephanie} alt="" />
-						<Description name="Stephanie Pena" title="Customer Success Engineer" text={personQuote("stephanie")} />
+						<Description name="Stephanie Pena" title="Ops Support Engineer" text={personQuote("stephanie")} />
 					</div>
 					<div className="xl:flex xl:flex-row-reverse lg:flex-col p-10 m-auto">
 						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-left" src={Shafee} alt="" />
-						<Description name="Shafee Ahmed" title="Front End Developer" text={personQuote("shafee")} />
+						<Description name="Shafee Ahmed" title="Full Stack Developer" text={personQuote("shafee")} />
 					</div>
 					<div className="xl:flex xl:flex-row lg:flex-col p-10 m-auto">
 						<img className="m-auto xl:w-96 lg:w-1/2 h-auto clip-right" src={Julian} alt="" />
